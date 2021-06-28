@@ -1,0 +1,130 @@
+<html>
+<body>
+
+
+
+  <h1>robot control panel</h1>
+  <p>drag sliders to choose the range </p>
+
+<form action="save.php">
+
+engine1: <input type="range" id="engine1" min="1" max="100" value="0">
+<button type="button" onclick="engine1()">view value</button>
+<p id="demo1"></p>
+
+engine2: <input type="range" id="engine2" min="1" max="100" value="0">
+<button type="button" onclick="engine2()">view value</button>
+<p id="demo2"></p>
+
+engine3: <input type="range" id="engine3" min="1" max="100" value="0">
+<button type="button" onclick="engine3()">view value</button>
+<p id="demo3"></p>
+
+engine4: <input type="range" id="engine4" min="1" max="100" value="0">
+<button type="button" onclick="engine4()">view value</button>
+<p id="demo4"></p>
+
+engine5 : <input type="range" id="engine5" min="1" max="100" value="0">
+<button type="button" onclick="engine5()">view value</button>
+<p id="demo5"></p>
+
+<br>
+
+engine6 : <input type="range" id="engine6" min="1" max="100" value="0">
+<button type="button" onclick="engine6()">view value</button>
+<p id="demo6"></p>
+
+<br>
+
+
+  <input type="button" value="display engines data " onclick="display()">
+
+<br>
+
+  <button id="save"> save engines data</button>
+
+
+</form>
+
+
+
+<script>
+
+
+
+
+
+
+
+function engine1() {
+  var x = document.getElementById("engine1");
+  var defaultVal = x.defaultValue;
+  var currentVal = x.value;
+    document.getElementById("demo1").innerHTML = "first engine's value is " + currentVal;
+}
+
+function engine2() {
+  var x = document.getElementById("engine2");
+  var defaultVal = x.defaultValue;
+  var currentVal = x.value;
+    document.getElementById("demo2").innerHTML = "second engine's value is " + currentVal;
+}
+
+function engine3() {
+  var x = document.getElementById("engine3");
+  var defaultVal = x.defaultValue;
+  var currentVal = x.value;
+    document.getElementById("demo3").innerHTML = "third engine's value is " + currentVal;
+
+}
+function engine4() {
+  var x = document.getElementById("engine4");
+  var defaultVal = x.defaultValue;
+  var currentVal = x.value;
+    document.getElementById("demo4").innerHTML = "fourth engine's value is " + currentVal;
+}
+function engine5() {
+  var x = document.getElementById("engine5");
+  var defaultVal = x.defaultValue;
+  var currentVal = x.value;
+    document.getElementById("demo5").innerHTML = "fifth engine's value is " + currentVal;
+}
+
+function engine6() {
+  var x = document.getElementById("engine6");
+  var defaultVal = x.defaultValue;
+  var currentVal = x.value;
+    document.getElementById("demo6").innerHTML = "sixth engine's value is " + currentVal;
+}
+
+
+function display(){
+
+  var en1 = document.getElementById("engine1").value;
+  alert(" the first engine  = " + en1 );
+
+  var en2 = document.getElementById("engine2").value;
+  alert(" the second engine  = " + en2);
+
+  var en3 = document.getElementById("engine3").value;
+  alert(" the third engine  = " + en3);
+
+  var en4 = document.getElementById("engine4").value;
+  alert(" the fourth engine  = " + en4);
+
+  var en5 = document.getElementById("engine5").value;
+  alert(" the fifth engine  = " + en5);
+
+  var en6 = document.getElementById("engine6").value;
+  alert(" the sixth engine  = " + en6);
+
+}
+
+
+
+</script>
+
+</form>
+
+</body>
+</html>
